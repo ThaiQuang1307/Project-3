@@ -3,10 +3,14 @@ import { getAPI } from "./getApi.js";
 import { product, params } from "./variable.js";
 
 export const showProduct = () => {
-  let api = `${API_PRODUCT}?q=${params.q}`;
+  // console.log(params);
+  let category = "";
+  if (params.category != "") {
+    category = `&category=${params.category}`;
+  }
+  let api = `${API_PRODUCT}?q=${params.q}&_page=${params.page}&_limit=${params.limit}&_sort=${params.sort}&_order=${params.order}${category}`;
 
   getAPI(api).then((data) => {
-    console.log(data);
     let htmlArray = data.map((item) => {
       let discount = item.discountPercentage.toFixed(0);
       return `

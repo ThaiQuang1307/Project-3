@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 
+/* Search */
 .search {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .search input {
@@ -33,6 +34,18 @@
     background-color: black;
     color: #fff;
 }
+
+/* End Search */
+
+/* Filter Price  */
+select {
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+/* End Filter Price  */
 
 /* Category  */
 .category-list {
@@ -129,3 +142,42 @@
 }
 
 /* End Product  */
+
+/* Paginate */
+.paginate {
+    text-align: center;
+}
+
+.paginate .paginate__main {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.paginate .paginate__main .paginate__button i {
+    font-size: 35px;
+    color: #e44e68;
+}
+
+.paginate .paginate__main .paginate__button:hover {
+    cursor: pointer;
+}
+
+.paginate .paginate__main .paginate__button:hover i {
+    color: #561111;
+}
+
+.paginate .paginate__main .paginate__number {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 540;
+}
+
+/* End Paginate */

@@ -24,7 +24,27 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
     </div>
+
+    <select id="filter-price">
+        <option value="mac-dinh">Mặc định</option>
+        <option value="gia-thap-den-cao">Giá thấp đến cao</option>
+        <option value="gia-cao-den-thap">Giá cao đến thấp</option>
+        <option value="giam-gia-nhieu">Giảm giá nhiều</option>
+    </select>
+    
     <div id="products" class="product-list"></div>
+
+    <div id="paginate" class="paginate">
+        <div class="paginate__main">
+            <span id="paginate-pre" class="paginate__button">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+            </span>
+            <span id="paginate-number" class="paginate__number">1</span>
+            <span id="paginate-next" class="paginate__button">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </span>
+        </div>
+    </div>
 
     <script type="module" src="js/category.js"></script>
     <script type="module" src="js/product.js"></script>
